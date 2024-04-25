@@ -1,6 +1,6 @@
-# Agency Website - React Js
+# Heaven Estate - React Js
 
-![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=HE%20HeavenEstate&color=GREEN&style=for-the-badge)
 
 
 ## About the project
@@ -17,10 +17,13 @@ This is an responsive website created using React + Vite and Tailwind CSS.
 ### Front end
 - VS Code
 - React + Vite
+- three.js
+- r3F
+- WebXR
 - Tailwind CSS
 
 ### Deployment in production
-- Front end web: Netlify
+- Front end web: Netlify, vercel
 
 ## Settings and improvements
 
@@ -32,6 +35,5 @@ The project is still in development and the next updates will focus on the follo
 - [x] Services component
 - [x] About component
 - [x] Products component
-- [x] Blog component
-- [x] Newsletter component
+- [x] Demo
 - [x] Footer component
