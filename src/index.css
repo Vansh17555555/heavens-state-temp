@@ -7,5 +7,5 @@
 }
 
 .home-h1 {
-  @apply text-4xl text-center font-semibold mb-4 text-neutralDGrey md:w-3/4 md:text-left md:text-5xl leading-snug;
+  @apply text-4xl text-center font-semibold mb-4 text-white md:w-3/4 md:text-left md:text-5xl leading-snug;
 }

@@ -4,8 +4,8 @@ import { Blog } from "./components/Blog";
 import { Home } from "./components/Home";
 import { MyFooter } from "./components/MyFooter";
 import { Navbar } from "./components/Navbar";
-import { Newsletter } from "./components/Newsletter";
-import { Products } from "./components/Products";
+//import { Newsletter } from "./components/Newsletter";
+//import { Products } from "./components/Products";
 import { Services } from "./components/Services";
 
 function Final() {
@@ -13,11 +13,11 @@ function Final() {
     <>
       <Navbar />
       <Home />
-      <Services />
       <About />
-      <Products />
+      <Services />
+      
       <Blog />
-      <Newsletter />
+      
       <MyFooter />
     </>
   );

@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React from "react";
 
 export const Blog = () => {
@@ -5,20 +7,20 @@ export const Blog = () => {
     {
       id: 1,
       title: "Creating Streamlined Safeguarding Processes with OneRen",
-      image: "/src/assets/blog1.png",
+      image: "/src/assets/blog1-removebg-preview.png",
       link:'/model1',
     },
     {
       id: 2,
       title:
         "What are your safeguarding responsibilities and how can you manage them?",
-      image: "./../../src/assets/blog2.png",
+      image: "./../../src/assets/blog2-removebg-preview.png",
       link:'/model2',
     },
     {
       id: 3,
       title: "Revamping the Membership Model with Triathlon Australia",
-      image: "../../src/assets/blog3.png",
+      image: "../../src/assets/blog3-removebg-preview(1).png",
       link:'/model3',
     },
   ];
@@ -26,28 +28,30 @@ export const Blog = () => {
   return (
     <section className="px-4 lg:px-14 max-w-screen-2xl mx-auto my-12" id="faq">
       <div className="text-center md:w-1/2 mx-auto">
-        <h2 className="text-4xl text-neutralDGrey font-semibold mb-4">
+        <h2 className="text-4xl text-blue-500 font-semibold mb-4">
         Experience a Demo Today
         </h2>
-        <p className="text-sm text-neutralGrey mb-8 md:w-3/4 mx-auto">
+        // eslint-disable-next-line react/jsx-no-comment-textnodes
+        <p className="text-base text-white mb-8 md:w-3/4 mx-auto">
+        // eslint-disable-next-line react/no-unescaped-entities
         Discover the future of real estate with Heaven Estate's AR and 3D solutions. Schedule your personalized demo today to see how our technology enhances property exploration. Contact us now to experience AR and 3D in action.
         </p>
       </div>
 
       <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 items-center justify-between">
         {blogs.map((blog) => (
-          <div key={blog.id} className="mx-auto relative mb-12 cursor-pointer">
+          <div key={blog.id} className="mx-auto bg-black relative mb-12 cursor-pointer">
             <img
               src={blog.image}
               alt="Imagem do blog"
-              className="hover:scale-95 transition-all duration-300"
+              className="hover:scale-95  bg-black transition-all duration-300"
             />
-            <div className="text-center px-4 py-8 bg-white shadow-lg rounded-md md:w-3/4 mx-auto absolute left-0 right-0 -bottom-12">
+            <div className="text-center px-4 py-8 bg-black shadow-lg rounded-md md:w-3/4 mx-auto absolute left-0 right-0 -bottom-12">
             <a
                   href={blog.link}
                   className="font-bold text-brandPrimary hover:text-neutral-700"
                 >
-              <div className="flex items-center justify-center">
+              <div className="flex items-center  text-white justify-center bg-black">
                 
                   Demo
                   <svg

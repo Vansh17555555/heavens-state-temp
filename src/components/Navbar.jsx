@@ -6,26 +6,13 @@ import { FaXmark, FaBars } from "react-icons/fa6";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isSticky, setIsSticky] = useState(false);
+ // const [isSticky, setIsSticky] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  useEffect(() => {
-    const hendleScroll = () => {
-      if (window.scrollY > 100) {
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
-      }
-    };
-    window.addEventListener("scroll", hendleScroll);
-
-    return () => {
-      window.addEventListener("scroll", hendleScroll);
-    };
-  });
+  
 
   const navItems = [
     { link: "Home", path: "home" },
@@ -37,26 +24,17 @@ export const Navbar = () => {
   ];
 
   return (
-    <>
-      <header className="w-full bg-white md:bg-transparent fixed top-0 left-0 right-0">
+    <div className="border-black bg-black mb-3">
+      <header className="w-full bg-black md:bg-transparent top-0 left-0 right-0 border-black">
         <nav
-          className={`py-4 lg:px-14 px-4 ${
-            isSticky
-              ? "sticky top-0 left-0 right-0 border-b bg-white duration-300"
-              : ""
-          }`}
+          className="py-6 lg:px-14 px-4 top-0 left-0 right-0 border-b-0 bg-black duration-300 "
         >
           <div className="flex justify-between items-center text-base gap-8">
             <a
               className="text-2xl font-semibold flex items-center space-x-3"
               href="/"
             >
-              <img
-                className="w-10 inline-block items-center"
-                src={logo}
-                alt="Imagem do logo"
-              />
-              <span className="text-[#263238]">Heaven Estate</span>
+              <span className="text-[#514fe0]">Heaven Estate</span>
             </a>
 
             <ul className="md:flex space-x-12 hidden">
@@ -67,7 +45,7 @@ export const Navbar = () => {
                   smooth={true}
                   offset={-100}
                   key={path}
-                  className="block text-base text-gray900 hover:text-brandPrimary first:font-medium cursor-pointer"
+                  className="block text-base text-white hover:text-brandPrimary font-bold cursor-pointer"
                 >
                   {link}
                 </Link>
@@ -108,6 +86,6 @@ export const Navbar = () => {
           </div>
         </nav>
       </header>
-    </>
+    </div>
   );
 };

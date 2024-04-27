@@ -35,16 +35,16 @@ export const Services = () => {
 
   return (
     <section
-      className=" max-w-screen-2xl mx-auto"
+      className=" mx-auto w:100%"
       id="service"
     >
 
 
       <div className="mt-20 md:w-1/2 mx-auto text-center">
-        <h2 className="text-4xl text-neutralDGrey font-semibold mb-3">
+        <h2 className="text-4xl text-blue-500 font-semibold mb-3">
           Discover Our Range of Premier Real Estate Services
         </h2>
-        <p className="text-neutralGrey">What services heaven Estate provides?</p>
+        <p className="text-white text-2xl"><strong>What services heaven Estate provides?</strong></p>
       </div>
 
       <div className="mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto gap-12">
@@ -57,10 +57,10 @@ export const Services = () => {
               <div className="bg-[#d9dbe9] mb-4 h-14 w-14 mx-auto rounded-tl-3xl rounded-br-3xl">
                 <img className="-ml-5" src={service.image} alt="" />
               </div>
-              <h4 className="text-2xl font-bold text-neutralDGrey mb-2 px-2">
+              <h4 className="text-3xl font-bold text-white mb-2 px-2">
                 {service.title}
               </h4>
-              <p className="text-sm text-neutralGrey">{service.description}</p>
+              <p className=" text-neutralGrey text-base">{service.description}</p>
             </div>
           </div>
         ))}
